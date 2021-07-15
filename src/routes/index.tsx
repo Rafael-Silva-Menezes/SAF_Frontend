@@ -12,6 +12,9 @@ import CreateBranch from '../pages/Branches/CreateBranch';
 import DeleteBranch from '../pages/Branches/DeleteBranch';
 
 import ListEmploye from '../pages/Employees/ListEmploye';
+import CreateEmploye from '../pages/Employees/CreateEmploye';
+import EditEmployee from '../pages/Employees/EditEmployee';
+import DeleteEmployee from '../pages/Employees/DeleteEmployee';
 
 const Routes: React.FC = () => {
   return (
@@ -33,6 +36,27 @@ const Routes: React.FC = () => {
         path="/listEmployees/:id"
         exact
         component={ListEmploye}
+        isPrivate
+      />
+
+      <Route
+        path="/createEmployee/:id"
+        exact
+        component={CreateEmploye}
+        isPrivate
+      />
+
+      <Route
+        path="/editEmployee/:branch_id/:id"
+        exact
+        component={EditEmployee}
+        isPrivate
+      />
+
+      <Route
+        path="/deleteEmployee/:branch_id/:id"
+        exact
+        component={DeleteEmployee}
         isPrivate
       />
     </Switch>

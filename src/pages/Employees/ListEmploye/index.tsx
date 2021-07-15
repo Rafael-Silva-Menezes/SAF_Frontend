@@ -29,7 +29,7 @@ const ListEmploye: React.FC = () => {
         <h1>Funcionários</h1>
       </Header>
       <ContainerButton>
-        <Link to="/createEmployee">
+        <Link to={`/createEmployee/${id}`}>
           <Button>Cadastrar funcionário</Button>
         </Link>
       </ContainerButton>
@@ -38,8 +38,8 @@ const ListEmploye: React.FC = () => {
           <CardEmployee
             id={employee.id.substring(0, 6)}
             link={[
-              `/editEmployee/${employee.id}`,
-              `/deleteEmployee/${employee.id}`,
+              `/editEmployee/${employee.branch_id}/${employee.id}`,
+              `/deleteEmployee/${employee.branch_id}/${employee.id}`,
             ]}
             name={employee.name}
             branch={employee.branch_name}
