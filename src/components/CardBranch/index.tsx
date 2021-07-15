@@ -1,13 +1,16 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 import { FiSearch, FiEdit, FiDelete } from 'react-icons/fi';
+import { ListBranchesDTO } from '../../interfaces/branches';
+import api from '../../services/api';
 
 import Button from '../ButtonActions';
 
 import { Container, Buttons, BranchText } from './styles';
 
 interface ICardBranchProps {
-  id: Number;
+  id: string;
   name: string;
   number: Number;
   link: string[];

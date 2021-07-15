@@ -1,12 +1,11 @@
-import styled, { keyframes } from 'styled-components';
-import { shade } from 'polished';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
   max-width: 400px;
   background: #f4ede8;
   padding: 20px;
-  margin-top: 20px;
+  margin: 30px 15px 30px 15px;
 
   border-radius: 20px;
 

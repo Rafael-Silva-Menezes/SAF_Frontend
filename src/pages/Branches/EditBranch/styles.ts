@@ -10,6 +10,21 @@ export const Container = styled.div`
   width: 100%;
 `;
 
+export const Header = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  a {
+    color: #fff;
+    align-self: flex-start;
+    margin-left: 40px;
+  }
+`;
+
 const appearFromLeft = keyframes`
   from {
     opacity: 0;
@@ -39,35 +54,4 @@ export const AnimationContainer = styled.div`
       margin-bottom: 24px;
     }
   }
-
-    a {
-      color: #f4ede8;
-      display: block;
-      margin-top: 24px;
-      text-decoration: none;
-      transition: color 0.2s;
-
-      &:hover {
-        color: ${shade(0.2, '#f4ede8')};
-      }
-    }
-  }
-
-  > a {
-    color: #ff9000;
-    display: block;
-    margin-top: 24px;
-    text-decoration: none;
-    transition: color 0.2s;
-
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-right: 16px;
-    }
-
-    &:hover {
-      color: ${shade(0.2, '#ff9000')};
-    }
 `;

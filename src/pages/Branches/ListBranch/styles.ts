@@ -25,7 +25,14 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    gap: 0px 10px;
+    gap: 10px;
+  }
+
+  @media (min-width: 1900px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
   }
 `;
 

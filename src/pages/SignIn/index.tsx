@@ -44,10 +44,10 @@ const SignIn: React.FC = () => {
           abortEarly: false,
         });
 
-        // await signIn({
-        //   email: data.email,
-        //   password: data.password,
-        // });
+        await signIn({
+          email: data.email,
+          password: data.password,
+        });
 
         history.push('/listBranch');
       } catch (err) {
@@ -66,7 +66,7 @@ const SignIn: React.FC = () => {
         });
       }
     },
-    [addToast, history],
+    [addToast, history, signIn],
   );
 
   return (

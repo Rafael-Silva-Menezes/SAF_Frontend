@@ -7,7 +7,7 @@ import Button from '../ButtonActions';
 import { Container, Buttons, BranchText } from './styles';
 
 interface ICardEmployeeProps {
-  id: Number;
+  id: string;
   name: string;
   branch: string;
   link: string[];
